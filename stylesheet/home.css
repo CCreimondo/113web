@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-track-piece { background:#033047; }
+::-webkit-scrollbar-thumb { width:5px; background:#096CA2; }
+
+@font-face
+{
+font-family: Langdon;
+src:url(../font/Langdon.eot), /* IE9+ */
+    url(../font/Langdon.otf); 
+}
+
+
+#rside {
+	position:relative;
+	width:auto;
+	height:4130px;
+	background-color:#094467;/*#094467*/
+	margin-left:128px;
+	z-index:100;
+}
+
+#r_main {
+}
+
+#introduction {
+	background-image:url(../images_h/113-0.jpg);
+	width:1228px;
+	height:673px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#intro_text {
+	position:relative;
+	width:675px;
+	height:470px;
+	left:575px;
+	top:130px;
+	font-family:"Microsoft YaHei";
+	color:#e8e7db;
+	font-size:17px;
+	font-weight:bold;
+	line-height:56px;
+	letter-spacing:3px;
+}
+
+#intro_text span {
+	display:inline;
+	color:#e84a47;
+}
+
+.conception {
+	width:1233px;
+	height:676px;
+	overflow-x:hidden;
+}
+
+.conception img {
+	width:1228px;
+	height:673px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+#designer {
+	margin:0;
+	text-align:center;
+	color:#FFF;
+	font-size:12px;
+	font-family:Microsoft YaHei;
+}

@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-track-piece { background:#552800;  }
+::-webkit-scrollbar-thumb { width:5px; background:#FFBC80; }
+
+#rside {
+	position:relative;
+	width:*;
+	height:3160px;
+	background-color:#fda34e;
+	margin-left:128px;
+	padding-top:100px;
+	background-image:url(../images_s/sh_bg.png);
+	background-attachment:fixed;
+	z-index:100;
+	
+}
+
+#r_main {
+	
+}
+
+#sh_head {
+	widows:100%;
+	height:116px;
+}
+
+#sh_no6 {
+	width:100%;
+	height:494px;
+}
+
+#sh_no5 {
+	width:100%;
+	height:496px;
+}
+
+#sh_no4 {
+	width:100%;
+	height:496px;
+}
+
+#sh_no3 {
+	width:100%;
+	height:406px;
+}
+
+#sh_no2 {
+	width:100%;
+	height:496px;
+}
+
+#sh_no1 {
+	width:100%;
+	height:468px;
+}
+
+#line_end {
+	width:100%;
+	height:130px;
+}
+
+.timeline  {
+	width:280px;
+	height:100%;
+	float:left;
+	left:0;
+	display:block;
+}
+
+.timeline img {
+	position:relative;
+	left:256px;
+}
+
+.timeline_detail {
+	width:auto;
+	float:left;
+	margin-left:18px;
+}

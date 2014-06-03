@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* CSS Document */
+
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-track-piece { background:#0E5C41;}
+::-webkit-scrollbar-thumb { width:5px; background:#4BC9AA; }
+
+#rside {
+	position:relative;
+	top:0;
+	width:auto;
+	height:676px;
+	background-attachment: fixed; 
+	background-image:url(../images/greenBg.jpg);
+	background-color:#3de39f;
+	margin-left:128px;
+	z-index:100;
+}
+
+#r_main {
+	width:100%;
+	height:620px;
+}
+
+#inner {
+	position:relative;
+	width:auto;
+	padding-top:5%;
+}
+
+#container {
+	text-align:center;
+	padding-left:13.5%;
+	padding-right:13.5%;
+
+}
+
+#container h1 {
+	font-family: Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+	color: #EBE5DA;
+    height: 44px;
+	letter-spacing: 16px;
+	margin-bottom:50px;
+    line-height: 44px;
+	display:block;
+}
+
+#container span {
+	font-family:"华文细黑", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+    font-weight: normal;
+    height: 30px;
+    letter-spacing: 1px;
+    line-height: 30px;
+	color: #EBE5DA;
+	margin-bottom:60px;
+	display:block;
+}
+
+#l_form {
+	float:left;
+	width:45%;
+	padding:0 14px;
+
+}
+
+.lform {
+	width:90%;
+	height:16px;
+	padding:18px;
+	border:4px  solid #EBE5DA;
+	color:#EBE5DA;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+    font-style: normal;
+	letter-spacing: normal;
+	line-height: 20px;
+	margin-bottom:20px;
+	display:block;
+	background:rgba(0, 0, 0, 0.01);
+}
+
+#r_form {
+	float:right;
+	display:block;
+	padding-left:10px;
+	padding-right:18px;
+	width:45%;
+}
+
+.input_ideas {
+	width:90%;
+	height:176px;
+	font-size: 14px;
+    font-style: normal;
+	letter-spacing: normal;
+	line-height: 20px;
+	border:4px solid #EBE5DA;
+	padding:18px;
+	margin-bottom:19px;
+	background:rgba(0, 0, 0, 0.01);
+	font-family: Arial, Helvetica, sans-serif;
+	resize:none;
+	display:block;
+}
+
+.sub_form {
+	width:101.1%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:20px;
+	border:0;
+	padding:20px;
+	color: #36b493;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+	text-transform:uppercase;
+	background-color:#EBE5DA;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #EBE5DA;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #EBE5DA;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #EBE5DA;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #EBE5DA;
+}
+
+.lform:focus {
+	outline-color:#65B8EF;
+	border:4px solid #65B8EF ;
+}
+
+.input_ideas:focus {
+	outline-color:#65B8EF;
+	border:4px solid #65B8EF ;
+}

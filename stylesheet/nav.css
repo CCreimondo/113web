@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{
+	height:100%;
+	margin:0;
+	/*overflow-x:hidden;*/
+}
+
+#main {
+	position:relative;
+	top:0;
+	width:100%;
+	height:100%;
+}
+
+#lside {
+	width:128px;
+	height:100%;
+	float:left;
+	position:fixed;
+	z-index:1;
+	display:block;
+	overflow-x;hidden;
+	top:0;
+	left:0;
+}
+
+.logo {
+	width:100%;
+	height:121px;
+	display:block;
+}
+
+.effect_nav {
+	position:relative;
+	left:0;
+	top:0;
+	width:286px; /*256*/
+	background-color:#e8e6e6;
+	height:97px;
+	z-index:100;
+}
+
+@-webkit-keyframes slipe {
+	0% { position:relative; left:0; top:0; }
+	80% { position:relative; left:-158px; top:0; }
+	100% { position:relative; left:-128px; top:0; }
+}
+
+@-moz-keyframes slipe {
+	0% { position:relative; left:0; top:0; }
+	80% { position:relative; left:-158px; top:0; }
+	100% { position:relative; left:-128px; top:0; }
+}
+
+@-o-keyframes slipe {
+	0% { position:relative; left:0; top:0; }
+	80% { position:relative; left:-158px; top:0; }
+	100% { position:relative; left:-128px; top:0; }
+}
+
+@keyframes slipe {
+	0% { position:relative; left:0; top:0; }
+	80% { position:relative; left:-158px; top:0; }
+	100% { position:relative; left:-128px; top:0; }
+}
+
+
+.effect_nav:hover {
+	-webkit-animation-delay:0ms;
+	-webkit-animation-duration:550ms;
+	-webkit-animation-name:'slipe';
+	-moz-animation-delay:0ms;
+	-moz-animation-duration:550ms;
+	-moz-animation-name:'slipe';
+	-o-animation-delay:0ms;
+	-o-animation-duration:550ms;
+	-o-animation-name:'slipe';
+	animation-delay:0ms;
+	animation-duration:550ms;
+	animation-name:'slipe';
+}
+
+nav a{
+	width:128px;
+	height:97px;
+	color:#e8e7db;
+	font-family: Microsoft YaHei,'gothambold', Helvetica, Arial, sans-serif;
+	letter-spacing:2.5px;
+	font-size:10px;
+	display:block;
+	text-decoration:none;
+	text-transform:uppercase;
+	text-align:center;
+	display:block;
+	float:left;
+}
+
+span {
+	text-align:center;
+	display:block;
+}
+
+/*nav a:hover {
+	font-weight:bold;
+}*/
+
+nav img {
+	height:45px;
+	width:45px;
+	margin:17px 0 0 0;
+}
+
+.home {
+	background-color:#065279;
+}
+
+.members {
+	background-color:#4c8dae;
+}
+
+
+.sharing {
+	background-color:#ffa755;/*#ffa631*/
+}
+
+.achievement {
+	background-color:#ff6b53;/*#ff3300*/
+}
+
+.feedback {
+	background-color:#37B494;
+}
+
+#footer {
+	width:100%;
+	height:62px;
+	line-height:62px;
+	text-align:center;
+}
+
+#footer img {
+	width:30px;
+	height:30px;
+}
+
+#footer_cr {
+	position:relative;
+	padding-top:10px;
+	margin-bottom:auto;
+	width:300px;
+	height:40px;
+	margin-left:auto;
+	font-size:12px;
+	line-height:40px;
+	margin-right:auto;
+	text-align:center;
+	color:#FFF;
+	font-family:Microsoft YaHei;
+}
+/*--以上是左边主导航-->*/
