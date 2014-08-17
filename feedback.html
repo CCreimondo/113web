@@ -7,6 +7,57 @@
 <link rel="stylesheet" type="text/css" href="stylesheet/feedback.css">
 <link rel="shortcut icon" href="images/logo_red.ico">
     <script type="text/jscript" src="scripts/checkBrowser.js"></script>
+    <script >
+            function formSubmit() {
+                var labels = ["name", "email", "qq", "phone", "sug"];
+                var data = new FormData();
+
+                var inputs = document.getElementsByClassName("lform");
+                var x;
+                for (x in inputs) {
+                        data.append(labels[x], inputs[x].value);
+                }
+                var txt = document.getElementsByClassName("input_ideas")[0].value;
+                data.append(labels[4], txt);
+
+                submitDataWithAjax(data);
+                return false;
+            }
+
+            function getHTTPObject() {
+                if (XMLHttpRequest) {
+                    return new XMLHttpRequest();
+                } else if (ActiveXObject) {
+                    try { return new ActiveXObject("Msxml2.XMLHTTP"); }
+                    catch (e) {
+                        try { return new ActiveXObject("Microsoft.XMLHTTP"); }
+                        catch (e) { }
+                    }
+                } else { return false; }
+            }
+
+            function submitDataWithAjax(data) {
+                var request = getHTTPObject();
+                request.open("POST", "save.php", true);
+                request.onreadystatechange = function () {
+                    if (request.readyState == 4 && request.status == 200) {
+                        var response = request.responseText;               //Type - string
+                        /*
+                         * Code: 1 - success, 0 - failed
+                         * IF 1 alert success, IF 0 alert again
+                         */
+                        //function prepareForm();
+                    } else {
+                        /*
+                         * Submit failed. Alert again.
+                         */
+                        //function prepareForm();
+                    }
+                }
+                request.send(data);
+                return true;
+            }
+    </script>
 </head>
 
 <body>
@@ -101,16 +152,16 @@
           <span>If you have any ideas about our websites or team , please contact us by finishing the form
 . 
           </span>
-          <form id="contact-form" action="877208487@qq.com" method="post">
+          <form id="contact-form" action="" method="post">
             <div id="l_form">
-              <input class="lform" placeholder="Your Name" required type="text">
-              <input class="lform" placeholder="Your Email" required type="text">
-              <input class="lform" placeholder="Your QQ numbers" required type="text">
-              <input class="lform" placeholder="Your Telephone" required type="text">
+              <input class="lform" name="name" placeholder="Your Name" required type="text">
+              <input class="lform" name="email" placeholder="Your Email" required type="text">
+              <input class="lform" name="qq" placeholder="Your QQ numbers" required type="text">
+              <input class="lform" name="phone" placeholder="Your Telephone" required type="text">
             </div>              
             <div id="r_form">
-              <textarea class="input_ideas" placeholder="Shoot your ideas" required></textarea>
-              <input class="sub_form" type="submit" value="Send It Away!">
+              <textarea name="suggestion" class="input_ideas" placeholder="Shoot your ideas" required></textarea>
+              <input class="sub_form" type="button"  value="Send It Away!" onclick="return formSubmit();" />
             </div>
           </form>
         </div>
