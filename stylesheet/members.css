@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 ::-webkit-scrollbar { width:5px; }
@@ -21,6 +21,31 @@
 	background-position:250px 170px;
 	margin-left:128px;
 	z-index:100;
+}
+
+#back-to-top {
+    position:fixed;
+    bottom:10%;
+    left:85%;
+    width:60px;
+    height:50px;
+    z-index:999;
+    background-color:rgba(159, 232, 65, 0.71);
+}
+
+#back-to-top a {
+    width:60px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    text-decoration:none;
+}
+
+#top {
+    width:77px;
+    height:50px;
+    text-align:center;
+    text-decoration:none;
 }
 
 #head {
