@@ -1,0 +1,4 @@
+# web.config
+*.config
+# like test.php~
+*.php~
