@@ -6,7 +6,7 @@
   $sug = $_POST["suggestion"];
   
   date_default_timezone_set("PRC");
-  $con = mysql_connect("localhost", "reimondo", "hzq19941107#");
+  $con = mysql_connect("localhost", "reimondo", "password");
   if (!$con) {
 	  die ("Could not connection: " . mysql.error());
   }
